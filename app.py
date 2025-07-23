@@ -12,16 +12,13 @@ from difflib import SequenceMatcher
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-genai.configure(api_key="AIzaSyD3VA8JfB8KM8bwREYeLGuXONw-zHbUmrQ")
+
 app = Flask(__name__)
 
 CORS(app)  
 
 DB_CONFIG = {
-    "server": "45.4.136.13",
-    "database": "Monica_9",
-    "username": "Samuel",
-    "password": "321.cba"
+    
 }
 
 SINONIMOS_PRODUCTOS = {
